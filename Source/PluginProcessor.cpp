@@ -22,7 +22,7 @@ SafetyTrackAudioProcessor::SafetyTrackAudioProcessor()
                        )
 #endif
 {
-    addParameter (threshold = new juce::AudioParameterFloat ("threshold", "Threshold", juce::NormalisableRange<float>(-60.0f, 6.0f, 1.0f), -20.0f));
+    addParameter (threshold = new juce::AudioParameterFloat ({"threshold", 1}, "Threshold", juce::NormalisableRange<float>(-60.0f, 6.0f, 1.0f), -20.0f));
 }
 
 SafetyTrackAudioProcessor::~SafetyTrackAudioProcessor()
